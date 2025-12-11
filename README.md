@@ -1,6 +1,6 @@
 # 📄 Scraper À Punt (apuntmedia/apuntscraper.mjs)
 
-Script en Node.js con Playwright (`crawl.mjs`) que recorre secciones de À Punt, extrae noticias y guarda HTML, texto plano, Markdown e índice JSON por sección y fecha.
+Script en Node.js con Playwright (`apuntscraper.mjs`) que recorre secciones de À Punt, extrae noticias y guarda HTML, texto plano, Markdown e índice JSON por sección y fecha.
 
 ## 🚀 Qué hace
 - Navega con Chromium headless las secciones configuradas (`politica`, `societat`, `cultura`, `economia`, `igualtat`, `mon`).
