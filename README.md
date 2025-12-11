@@ -1,6 +1,6 @@
-# 📄 Scraper À Punt (apuntmedia/crawl.mjs)
+# 📄 Scraper À Punt (apuntmedia/apuntscraper.mjs)
 
-Script en Node.js con Playwright (`crawl.mjs`) que recorre secciones de À Punt, extrae noticias, y guarda HTML, texto plano, Markdown e índice JSON por sección y fecha.
+Script en Node.js con Playwright (`crawl.mjs`) que recorre secciones de À Punt, extrae noticias y guarda HTML, texto plano, Markdown e índice JSON por sección y fecha.
 
 ## 🚀 Qué hace
 - Navega con Chromium headless las secciones configuradas (`politica`, `societat`, `cultura`, `economia`, `igualtat`, `mon`).
@@ -31,9 +31,9 @@ npm install playwright turndown
 
 ## ▶️ Ejecución
 ```bash
-node crawl.mjs
+node apuntscraper.mjs
 ```
-Por defecto usa Chromium en modo headless y tiempos de espera de 40s por página/noticia.
+Por defecto, usa Chromium en modo headless y tiempos de espera de 40 s por página/noticia.
 
 ## 🧠 Flujo del script
 1) Itera las secciones definidas en `secciones` (URL + carpeta destino).  
@@ -51,11 +51,33 @@ Por defecto usa Chromium en modo headless y tiempos de espera de 40s por página
 - Puedes añadir más metadatos (ej. flag de vídeo) en `newsData` si lo necesitas.
 - Esperas: scroll con pausas de 10s; navegación con timeout de 40s.
 
+## 📚 Referencia
+
+- Por favor, cita este script usando la siguiente entrada BibTeX:
+
+```
+@misc{scraper_apunt_media_2025,
+  author       = {Garc\'ia Cerd\'a, Ra\'ul and Mu{\~n}oz Guillena, Rafael},
+  title        = {APUNTMEDIA Scraper}, 
+  year         = {2025},
+  institution  = {Language and Information Systems Group (GPLSI) and Centro de Inteligencia Digital (CENID), University of Alicante (UA)},
+  howpublished = {\url{https://github.com/gplsi/scraper-APuntMedia}}
+}
+```
+
 ## 💰 Financiación
-- (pendiente)
+Este recurso está financiado por el Ministerio para la Transformación Digital y de la Función Pública — Financiado por la UE – NextGenerationEU, en el marco del proyecto Desarrollo de Modelos ALIA.
 
 ## 🙏 Agradecimientos
-- (pendiente)
+Expresamos nuestro agradecimiento a todas las personas e instituciones que han contribuido al desarrollo de este recurso.
+
+Agradecimientos especiales a:
+
+[Proveedores de datos]
+
+[Proveedores de soporte tecnológico]
+
+Asimismo, reconocemos las contribuciones financieras, científicas y técnicas del Ministerio para la Transformación Digital y de la Función Pública – Financiado por la UE – NextGenerationEU dentro del marco del proyecto Desarrollo de Modelos ALIA.
 
 ## ⚠️ Aviso legal
 Tenga en cuenta que los datos pueden contener sesgos u otras distorsiones no deseadas. Cuando terceros desplieguen sistemas o presten servicios basados en estos datos, o los utilicen directamente, serán responsables de mitigar los riesgos asociados y de garantizar el cumplimiento de la normativa aplicable, incluida aquella relacionada con el uso de la Inteligencia Artificial.
